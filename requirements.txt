@@ -1,0 +1,19 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+pyYAML
+joblib
+Flask==2.2.5
+matplotlib
+seaborn
+tld==0.13
+ensure
+python-box>=6.0
+tensorflow>=2.10.0
+keras>=2.10.0
+dvc
+pillow
+pyzbar
+pymongo
+-e .

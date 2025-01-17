@@ -1,0 +1,106 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python src\MaliciousQRCodeDetection\pipeline\stage_01_data_ingestion.py
+    deps:
+    - path: src\MaliciousQRCodeDetection\pipeline\stage_01_data_ingestion.py
+      hash: md5
+      md5: 76bc08d27d6354ca37cd3fadb0eaa543
+      size: 1076
+    outs:
+    - path: artifacts/data_ingestion/balanced_urls.csv
+      hash: md5
+      md5: b03c22cbdd89823c0ec32044c4826343
+      size: 76913
+  feature_engineering:
+    cmd: python src\MaliciousQRCodeDetection\pipeline\stage_02_feature_engineering.py
+    deps:
+    - path: artifacts/data_ingestion/balanced_urls.csv
+      hash: md5
+      md5: b03c22cbdd89823c0ec32044c4826343
+      size: 76913
+    - path: src\MaliciousQRCodeDetection\pipeline\stage_02_feature_engineering.py
+      hash: md5
+      md5: e81d7386d5cfeef142df2d5889466a4f
+      size: 1132
+    outs:
+    - path: artifacts/feature_engineering/scaler.joblib
+      hash: md5
+      md5: f44b1e044a01dc48370d8140bdaa1dd1
+      size: 1743
+    - path: artifacts/feature_engineering/test.csv
+      hash: md5
+      md5: 792fe4d3e6ffab7a0c9b8936e883e2ad
+      size: 60123930
+    - path: artifacts/feature_engineering/train.csv
+      hash: md5
+      md5: 8f5ee99d2ee1d68d0d8d51f76f793330
+      size: 240506565
+  data_validation:
+    cmd: python src\MaliciousQRCodeDetection\pipeline\stage_03_data_validaion.py
+    deps:
+    - path: artifacts/feature_engineering/test.csv
+      hash: md5
+      md5: 792fe4d3e6ffab7a0c9b8936e883e2ad
+      size: 60123930
+    - path: artifacts/feature_engineering/train.csv
+      hash: md5
+      md5: 8f5ee99d2ee1d68d0d8d51f76f793330
+      size: 240506565
+    - path: schema.yaml
+      hash: md5
+      md5: f93518d4638be4c55b079bb21712338b
+      size: 525
+    - path: src\MaliciousQRCodeDetection\pipeline\stage_03_data_validaion.py
+      hash: md5
+      md5: 183419411b9ca8797845af1dbbf10433
+      size: 1079
+    outs:
+    - path: artifacts/data_validation/status.txt
+      hash: md5
+      md5: c5aff53158692e0817a3632881347e7b
+      size: 23
+  model_training:
+    cmd: python src\MaliciousQRCodeDetection\pipeline\stage_04_model_training.py
+    deps:
+    - path: artifacts/feature_engineering/test.csv
+      hash: md5
+      md5: 792fe4d3e6ffab7a0c9b8936e883e2ad
+      size: 60123930
+    - path: artifacts/feature_engineering/train.csv
+      hash: md5
+      md5: 8f5ee99d2ee1d68d0d8d51f76f793330
+      size: 240506565
+    - path: src\MaliciousQRCodeDetection\pipeline\stage_04_model_training.py
+      hash: md5
+      md5: bf80ad8a85a3166299715aa37121326d
+      size: 1040
+    outs:
+    - path: artifacts/model_training/model.keras
+      hash: md5
+      md5: 65d8addba9d6c80e0963603d18cd7d08
+      size: 54404
+  model_evaluation:
+    cmd: python src\MaliciousQRCodeDetection\pipeline\stage_05_model_evaluation.py
+    deps:
+    - path: artifacts/feature_engineering/test.csv
+      hash: md5
+      md5: 792fe4d3e6ffab7a0c9b8936e883e2ad
+      size: 60123930
+    - path: artifacts/feature_engineering/train.csv
+      hash: md5
+      md5: 8f5ee99d2ee1d68d0d8d51f76f793330
+      size: 240506565
+    - path: artifacts/model_training/model.keras
+      hash: md5
+      md5: 65d8addba9d6c80e0963603d18cd7d08
+      size: 54404
+    outs:
+    - path: artifacts/model_evaluation/test_mertics.json
+      hash: md5
+      md5: 29c16db8af58dee4231eb9e2a5f96648
+      size: 40
+    - path: artifacts/model_evaluation/train_mertics.json
+      hash: md5
+      md5: 7babc631f1f5477252bc420602dd9f8b
+      size: 40

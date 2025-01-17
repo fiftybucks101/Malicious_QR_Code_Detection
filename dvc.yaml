@@ -1,0 +1,46 @@
+stages:
+  data_ingestion:
+    cmd : python src\MaliciousQRCodeDetection\pipeline\stage_01_data_ingestion.py
+    deps:
+      - src\MaliciousQRCodeDetection\pipeline\stage_01_data_ingestion.py
+    outs:
+      - artifacts/data_ingestion/balanced_urls.csv
+
+  feature_engineering:
+    cmd : python src\MaliciousQRCodeDetection\pipeline\stage_02_feature_engineering.py
+    deps:
+      - artifacts/data_ingestion/balanced_urls.csv
+      - src\MaliciousQRCodeDetection\pipeline\stage_02_feature_engineering.py
+    outs:
+      - artifacts/feature_engineering/train.csv
+      - artifacts/feature_engineering/test.csv
+      - artifacts/feature_engineering/scaler.joblib
+
+  data_validation:
+    cmd: python src\MaliciousQRCodeDetection\pipeline\stage_03_data_validaion.py
+    deps:
+      - src\MaliciousQRCodeDetection\pipeline\stage_03_data_validaion.py
+      - schema.yaml
+      - artifacts/feature_engineering/train.csv
+      - artifacts/feature_engineering/test.csv
+    metrics:
+      - artifacts/data_validation/status.txt
+
+  model_training:
+    cmd: python src\MaliciousQRCodeDetection\pipeline\stage_04_model_training.py
+    deps:
+      - src\MaliciousQRCodeDetection\pipeline\stage_04_model_training.py
+      - artifacts/feature_engineering/train.csv
+      - artifacts/feature_engineering/test.csv
+    outs:
+      - artifacts/model_training/model.keras
+    
+  model_evaluation:
+    cmd: python src\MaliciousQRCodeDetection\pipeline\stage_05_model_evaluation.py
+    deps:
+      - artifacts/model_training/model.keras
+      - artifacts/feature_engineering/train.csv
+      - artifacts/feature_engineering/test.csv
+    metrics:
+      - artifacts/model_evaluation/train_mertics.json
+      - artifacts/model_evaluation/test_mertics.json

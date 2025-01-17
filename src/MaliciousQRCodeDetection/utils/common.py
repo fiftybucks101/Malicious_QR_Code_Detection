@@ -1,0 +1,37 @@
+from pathlib import Path
+from box import ConfigBox
+from ensure import ensure_annotations
+import yaml
+from MaliciousQRCodeDetection.logging.logger import logger
+from box.exceptions import BoxValueError
+from MaliciousQRCodeDetection.exception import MaliciousQRException
+import sys
+import os
+from typing import List
+
+@ensure_annotations
+def read_yaml(path_to_yaml: Path) -> ConfigBox:
+    try:
+        with open(path_to_yaml) as file:
+            content = yaml.safe_load(file)
+            logger.info(f'yaml file: {path_to_yaml} loaded successfully')
+            return ConfigBox(content)
+    except BoxValueError:
+        raise ValueError("YAML file is empty.")
+    except Exception as e:
+        raise MaliciousQRException(e,sys)
+
+
+@ensure_annotations
+def create_directories(path_to_directories: list, verbose: bool=True):
+
+    for path in path_to_directories:
+        os.makedirs(path,exist_ok=True)
+        if verbose:
+            logger.info(f"Created directory at: {path}")
+
+
+@ensure_annotations
+def get_size(path: Path) -> str:
+    size_in_kb = round(os.path.getsize(path)/1024)
+    return f"~ {size_in_kb} KB"

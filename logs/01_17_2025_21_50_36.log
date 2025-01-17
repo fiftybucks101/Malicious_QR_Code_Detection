@@ -1,0 +1,5 @@
+[ 2025-01-17 21:50:37,130] 24 root - INFO - >>>>> Stage: Data Ingestion Stage started <<<<<
+[ 2025-01-17 21:50:37,148] 17 root - INFO - yaml file: config\config.yaml loaded successfully
+[ 2025-01-17 21:50:37,151] 17 root - INFO - yaml file: schema.yaml loaded successfully
+[ 2025-01-17 21:50:37,151] 31 root - INFO - Created directory at: artifacts
+[ 2025-01-17 21:50:37,151] 31 root - INFO - Created directory at: artifacts/data_ingestion

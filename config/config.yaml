@@ -1,0 +1,36 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_URL: https://raw.githubusercontent.com/fiftybucks101/Wine_Quality_Prediction_End_To_End_ML/refs/heads/main/artifacts/data_ingestion/wine_quality_dataset/WineQT.csv
+  csv_dir: artifacts/data_ingestion
+  csv_file: artifacts/data_ingestion/balanced_urls.csv
+
+feature_engineering:
+  root_dir: artifacts/feature_engineering
+  csv_file: artifacts/data_ingestion/balanced_urls.csv
+  train_data: artifacts/feature_engineering/train.csv
+  test_data: artifacts/feature_engineering/test.csv
+  scaler_file: artifacts/feature_engineering/scaler.joblib
+  cleaned_data: artifacts/feature_enineering/cleaned_data.csv
+
+data_validation:
+  root_dir: artifacts/data_validation
+  schema: dict
+  train_data: artifacts/feature_engineering/train.csv
+  test_data: artifacts/feature_engineering/test.csv
+  status_file: artifacts/data_validation/status.txt
+
+model_training:
+  root_dir: artifacts/model_training
+  model_name: artifacts/model_training/model.keras
+  train_data: artifacts/feature_engineering/train.csv
+  test_data: artifacts/feature_engineering/test.csv
+
+model_evaluation:
+  root_dir: artifacts/model_evaluation
+  model_path: artifacts/model_training/model.keras
+  train_data: artifacts/feature_engineering/train.csv
+  test_data: artifacts/feature_engineering/test.csv
+  train_metrics_file: artifacts/model_evaluation/train_mertics.json
+  test_metrics_file: artifacts/model_evaluation/test_mertics.json

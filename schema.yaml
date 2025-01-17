@@ -1,0 +1,33 @@
+drop_columns:
+  'url': str
+  'label': str
+
+columns:
+  'url_len': int64
+  'httpSecure': int64
+  'no_of_digits': int64
+  'letter_count': int64
+  'Shortining_Service': int64
+  'having_ip_address': int64
+  'path_length': int64
+  'fd_length': int64
+  'count-www': int64
+  'count-dir': int64
+  '@': int64
+  '?': int64
+  '-': int64
+  '=': int64
+  '.': int64
+  '#': int64
+  '%': int64
+  '+': int64
+  '$': int64
+  '!': int64
+  '*': int64
+  ',': int64
+  '//': int64
+
+target_column:
+  'result': int64
+
+

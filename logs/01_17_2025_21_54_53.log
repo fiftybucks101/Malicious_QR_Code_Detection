@@ -1,0 +1,35 @@
+[ 2025-01-17 21:54:53,524] 24 root - INFO - >>>>> Stage: Data Ingestion Stage started <<<<<
+[ 2025-01-17 21:54:53,546] 17 root - INFO - yaml file: config\config.yaml loaded successfully
+[ 2025-01-17 21:54:53,547] 17 root - INFO - yaml file: schema.yaml loaded successfully
+[ 2025-01-17 21:54:53,547] 31 root - INFO - Created directory at: artifacts
+[ 2025-01-17 21:54:53,547] 31 root - INFO - Created directory at: artifacts/data_ingestion
+[ 2025-01-17 21:54:54,240] 22 root - INFO - artifacts/data_ingestion/balanced_urls.csv downloaded! with following info: 
+Connection: close
+Content-Length: 76913
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: text/plain; charset=utf-8
+ETag: "693db1204dae2bea6d6ca4f8ee9e088733a0a56cfcdc5faa664f78d25d7b0a38"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: A530:08F2:5EF4A:7C5ED:678A80D1
+Accept-Ranges: bytes
+Date: Fri, 17 Jan 2025 16:09:54 GMT
+Via: 1.1 varnish
+X-Served-By: cache-del21750-DEL
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1737130194.174815,VS0,VE303
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 769a414f55aeb0514dd53b0b27df4112ea693f55
+Expires: Fri, 17 Jan 2025 16:14:54 GMT
+Source-Age: 0
+
+
+[ 2025-01-17 21:54:54,240] 27 root - INFO - >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x
