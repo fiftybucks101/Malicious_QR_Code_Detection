@@ -1,0 +1,18 @@
+[ 2025-01-23 06:22:34,239] 25 root - INFO - >>>>> Stage: Feature Engineering Stage started <<<<<
+[ 2025-01-23 06:22:34,246] 17 root - INFO - yaml file: config\config.yaml loaded successfully
+[ 2025-01-23 06:22:34,246] 17 root - INFO - yaml file: schema.yaml loaded successfully
+[ 2025-01-23 06:22:34,246] 31 root - INFO - Created directory at: artifacts
+[ 2025-01-23 06:22:34,246] 31 root - INFO - Created directory at: artifacts/feature_engineering
+[ 2025-01-23 06:22:34,251] 127 root - INFO - csv file downloaded successfully for feature engineering
+[ 2025-01-23 06:22:34,746] 130 root - INFO - csv to DataFrame done..
+[ 2025-01-23 06:23:05,402] 133 root - INFO - all features extracted successfully..
+[ 2025-01-23 06:23:05,455] 136 root - INFO - unnecessay columns dropped successfully..
+[ 2025-01-23 06:23:05,598] 139 root - INFO - Train Test split successfully..
+[ 2025-01-23 06:23:05,642] 146 root - INFO - X_train,y_train,X_test,y_test splitted sucessfully..
+[ 2025-01-23 06:23:06,913] 152 root - INFO - Data scaled sucessfully..
+[ 2025-01-23 06:23:06,930] 160 root - INFO - New scaled train and test df made sucessfully..
+[ 2025-01-23 06:23:17,078] 164 root - INFO - New scaled train and test df saved sucessfully..
+[ 2025-01-23 06:23:17,085] 167 root - INFO - scaler.joblib saved sucessfully..
+[ 2025-01-23 06:23:17,123] 28 root - INFO - >>>>>> stage Feature Engineering Stage completed <<<<<<
+
+x==========x

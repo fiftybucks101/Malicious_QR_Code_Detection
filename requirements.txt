@@ -16,4 +16,6 @@ dvc
 pillow
 pyzbar
 pymongo
+python-dotenv
+certifi
 -e .

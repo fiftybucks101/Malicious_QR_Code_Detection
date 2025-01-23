@@ -11,6 +11,7 @@ src/MaliciousQRCodeDetection/components/data_validation.py
 src/MaliciousQRCodeDetection/components/feature_engineering.py
 src/MaliciousQRCodeDetection/components/model_evaluation.py
 src/MaliciousQRCodeDetection/components/model_training.py
+src/MaliciousQRCodeDetection/components/mongodb_connection.py
 src/MaliciousQRCodeDetection/config/__init__.py
 src/MaliciousQRCodeDetection/config/configuration.py
 src/MaliciousQRCodeDetection/constants/__init__.py

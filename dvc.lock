@@ -5,20 +5,20 @@ stages:
     deps:
     - path: src\MaliciousQRCodeDetection\pipeline\stage_01_data_ingestion.py
       hash: md5
-      md5: 76bc08d27d6354ca37cd3fadb0eaa543
-      size: 1076
+      md5: 7f281a43bc89ea2d741377c497e37ef0
+      size: 1090
     outs:
     - path: artifacts/data_ingestion/balanced_urls.csv
       hash: md5
-      md5: b03c22cbdd89823c0ec32044c4826343
-      size: 76913
+      md5: 26383fc836bc82c98c4c031100bef9de
+      size: 46800614
   feature_engineering:
     cmd: python src\MaliciousQRCodeDetection\pipeline\stage_02_feature_engineering.py
     deps:
     - path: artifacts/data_ingestion/balanced_urls.csv
       hash: md5
-      md5: b03c22cbdd89823c0ec32044c4826343
-      size: 76913
+      md5: 26383fc836bc82c98c4c031100bef9de
+      size: 46800614
     - path: src\MaliciousQRCodeDetection\pipeline\stage_02_feature_engineering.py
       hash: md5
       md5: e81d7386d5cfeef142df2d5889466a4f

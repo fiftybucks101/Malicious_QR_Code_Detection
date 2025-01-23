@@ -1,0 +1,6 @@
+[ 2025-01-23 06:18:13,007] 24 root - INFO - >>>>> Stage: Data Ingestion Stage started <<<<<
+[ 2025-01-23 06:18:13,012] 17 root - INFO - yaml file: config\config.yaml loaded successfully
+[ 2025-01-23 06:18:13,014] 17 root - INFO - yaml file: schema.yaml loaded successfully
+[ 2025-01-23 06:18:13,014] 31 root - INFO - Created directory at: artifacts
+[ 2025-01-23 06:18:13,016] 31 root - INFO - Created directory at: artifacts/data_ingestion
+[ 2025-01-23 06:18:17,469] 31 root - INFO - MongoDB connection established successfully.
