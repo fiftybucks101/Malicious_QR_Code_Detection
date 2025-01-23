@@ -1,0 +1,5 @@
+[ 2025-01-23 06:29:09,187] 17 root - INFO - yaml file: config\config.yaml loaded successfully
+[ 2025-01-23 06:29:09,187] 31 root - INFO - Created directory at: artifacts
+[ 2025-01-23 06:29:09,189] 31 root - INFO - Created directory at: artifacts/data_ingestion
+[ 2025-01-23 06:29:13,613] 21 root - INFO - MongoDB connection established successfully.
+[ 2025-01-23 06:29:31,213] 21 root - INFO - CSV file already exists in artifacts data ingestion
