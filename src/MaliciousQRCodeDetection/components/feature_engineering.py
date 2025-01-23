@@ -126,7 +126,7 @@ class FeatureEngineering:
         csvPath = self.config.csv_file
         logger.info('csv file downloaded successfully for feature engineering')
 
-        df = pd.read_csv('balanced_urls_1.csv')
+        df = pd.read_csv(csvPath)
         logger.info('csv to DataFrame done..')
 
         df = self.process_urls(df)
