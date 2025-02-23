@@ -1,4 +1,8 @@
-# Malicious URL Detection
+# Malicious URL Detection In QR Code 
+
+![alt text](image.png) 
+![alt text](image-1.png)
+
 
 ### dvc commands
 
@@ -17,4 +21,3 @@
 4) Create stages pipeline
 5) Create dvc pipeline 
 
-MongoDB conn string: mongodb+srv://fiftybucks001:fiftybucks001@maliciousqrcodedetectio.6wdgf.mongodb.net/?retryWrites=true&w=majority&appName=MaliciousQRCodeDetection
