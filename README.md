@@ -1,15 +1,36 @@
-# 📲🔍 **Malicious URL Detection In QR Code**
+# 📲 **Malicious URL Detection in QR Codes** 🔍✨
 
-## **Project Overview**
+---
 
-This project introduces a Malicious QR Code Detector designed to assess the safety of QR codes. The system works by extracting the embedded URL from a QR code and leveraging an Artificial Neural Network (ANN) to classify it as either "safe" or "unsafe." By analyzing the URL, the detector aims to protect users from potential threats such as phishing, malware, or other malicious activities commonly associated with unsafe QR codes. The goal is to provide a reliable and efficient tool for identifying risks in an increasingly QR code-driven digital landscape.
+## 🌟 **Project Overview** 🔲
 
-### <span style="color: #2ecc71;">Project Overview</span>
+🚀 This project unveils a **Malicious QR Code Detector** to evaluate QR code safety!  
+🔧 **How it works**: Extracts the URL hidden in a QR code and uses an **Artificial Neural Network (ANN)** to classify it as:  
+- ✅ **Safe**  
+- ❌ **Unsafe**  
 
-The dataset for this project was sourced from Kaggle, comprising a mix of safe and malicious URLs. It originally contained 654,132 URLs, with a 70/30 split favoring safe URLs (approximately 457,892 safe and 196,240 malicious). To ensure balanced training and improve model performance, downsampling was applied, reducing the dataset to an equal ratio of safe and malicious URLs. This preprocessing step mitigates bias toward the majority class and enhances the ANN's ability to generalize across both categories effectively.
+🛡️ By analyzing URLs, it guards against threats like **phishing**, **malware**, and other nasty surprises tied to shady QR codes.  
+🎯 **Goal**: Deliver a trusty, efficient tool to tackle risks in our QR code-powered world!
 
-## Project Demo
-![alt text](real_gif.gif)
+---
+
+## 📊 **Data Collection** 💾
+
+🌐 **Source**: Kaggle dataset packed with safe and malicious URLs.  
+📈 **Stats**:  
+- Total: **654,132 URLs**  
+- Original Split: **70% Safe** (~457,892) | **30% Malicious** (~196,240)  
+- After Downsampling: **50/50 Balanced Ratio** ⚖️  
+
+🧹 **Preprocessing**: Downsampling applied to even out the classes, boosting ANN accuracy and fairness across safe and unsafe predictions.
+
+---
+
+## 🎥 **Project Demo**  
+![Demo](real_gif.gif)  
+*See it in action!*
+
+---
 
 
 ### dvc commands
