@@ -4,12 +4,12 @@
 
 ## 🌟 **Project Overview** 
 
-🚀 This project unveils a **Malicious QR Code Detector** designed to evaluate QR code safety.  
+This project unveils a **Malicious QR Code Detector** designed to evaluate QR code safety.  
 **How it works**: The system extracts the URL embedded in a QR code and employs an **Artificial Neural Network (ANN)** to classify it as:  
 - **Safe**  
 - **Unsafe**  
 
-🛡️ By analyzing URLs, it protects users from threats like **phishing**, **malware**, and other risks linked to malicious QR codes.  
+By analyzing URLs, it protects users from threats like **phishing**, **malware**, and other risks linked to malicious QR codes.  
 **Data Collection**: The dataset, sourced from Kaggle, includes **654,132 URLs**—originally split as **70% safe** (~457,892) and **30% malicious** (~196,240). Downsampling balanced it to a **50/50 ratio**, enhancing ANN accuracy and fairness.  
 **Goal**: Provide a reliable, efficient tool to address risks in today’s QR code-driven digital world.
 
@@ -70,9 +70,13 @@
 
 ---
 
-## 🗂️ **Project Approach**
-1. Update config entity
-2. Update Configuration Manager
-3. Update Components
-4. Create stages pipeline
-5. Create DVC pipeline
+## 🗂️ **Project Workflows**
+
+1. Update config.yaml
+2. Update params.yaml
+3. Update config entity
+4. Update configuration manager in src config
+5. Update Components
+6. Update stages pipeline
+7. Update DVC pipeline
+8. Update app.py
