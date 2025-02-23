@@ -1,6 +1,6 @@
 # Malicious URL Detection In QR Code 
 
-<video controls src="20250223-0751-04.1401774.mp4" title="Title"></video>
+![Video Demo]("C:\Users\fifty\Downloads\real_gif.gif")
 
 
 ### dvc commands
