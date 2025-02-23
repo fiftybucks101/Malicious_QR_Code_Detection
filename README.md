@@ -1,6 +1,6 @@
 # Malicious URL Detection In QR Code 
 
-![Video Demo]("C:\Users\fifty\Downloads\real_gif.gif")
+![Video Demo]("C:\Users\fifty\OneDrive\Desktop\AI - Data Science\Malicious_QR_Code_Detection - 0.2\real_gif.gif")
 
 
 ### dvc commands
