@@ -1,28 +1,17 @@
-# 📲 **Malicious URL Detection in QR Codes** 🔍✨
+# 📲 **Malicious URL Detection in QR Codes** 🔍
 
 ---
 
 ## 🌟 **Project Overview** 🔲
 
-🚀 This project unveils a **Malicious QR Code Detector** to evaluate QR code safety!  
-🔧 **How it works**: Extracts the URL hidden in a QR code and uses an **Artificial Neural Network (ANN)** to classify it as:  
+🚀 This project unveils a **Malicious QR Code Detector** designed to evaluate QR code safety.  
+**How it works**: The system extracts the URL embedded in a QR code and employs an **Artificial Neural Network (ANN)** to classify it as:  
 - ✅ **Safe**  
 - ❌ **Unsafe**  
 
-🛡️ By analyzing URLs, it guards against threats like **phishing**, **malware**, and other nasty surprises tied to shady QR codes.  
-🎯 **Goal**: Deliver a trusty, efficient tool to tackle risks in our QR code-powered world!
-
----
-
-## 📊 **Data Collection** 💾
-
-🌐 **Source**: Kaggle dataset packed with safe and malicious URLs.  
-📈 **Stats**:  
-- Total: **654,132 URLs**  
-- Original Split: **70% Safe** (~457,892) | **30% Malicious** (~196,240)  
-- After Downsampling: **50/50 Balanced Ratio** ⚖️  
-
-🧹 **Preprocessing**: Downsampling applied to even out the classes, boosting ANN accuracy and fairness across safe and unsafe predictions.
+🛡️ By analyzing URLs, it protects users from threats like **phishing**, **malware**, and other risks linked to malicious QR codes.  
+**Data Collection**: The dataset, sourced from Kaggle, includes **654,132 URLs**—originally split as **70% safe** (~457,892) and **30% malicious** (~196,240). Downsampling balanced it to a **50/50 ratio**, enhancing ANN accuracy and fairness.  
+**Goal**: Provide a reliable, efficient tool to address risks in today’s QR code-driven digital world.
 
 ---
 
@@ -32,21 +21,53 @@
 
 ---
 
+## 🚀 **How to Run**
 
-### dvc commands
+1. 📥 Clone the repository:  
+   ```bash
+   git clone https://github.com/fiftybucks101/Malicious_QR_Code_Detection.git
 
-1) git init
-2) dvc init
-3) dvc repro
+2. 🔧 Install dependencies:
+    ```bash
+    pip install -r requirements.txt
 
-- For metrics: dvc metrics show
-- To see pipeline: dvc dag
+3. ▶️ Run the application 
+    ```bash
+    python app.py
 
-### Project approach
 
-1) Update config entity
-2) Update Configuration Manager
-3) Update Components
-4) Create stages pipeline
-5) Create dvc pipeline 
+## **DVC Commands
 
+1. 🌱 Initialize Git:
+    ```bash
+    git init 
+
+2. 🛠️ Initialize DVC:
+    ```bash
+    dvc init
+
+3. 🔄 Reproduce/Run the pipeline:
+    ```bash
+    dvc repro
+
+4. 📊 View metrics:
+    ```bash
+    dvc metrics show
+
+5. 🔍 Visualize pipeline:
+    ```bash
+    dvc dag
+
+
+## 📦 **Modular Project Approach**
+🔍 This project adopts a modular structure, breaking down functionality into reusable components—like URL extraction, ANN prediction, and data preprocessing—for cleaner code and easier maintenance.
+
+## ☁️ **MLOps Implementation**
+⚙️ The project leverages DVC for data versioning, AWS for scalable cloud storage, Docker for consistent environments, and CI/CD pipelines for automated testing and deployment, ensuring a robust and reproducible workflow.
+
+## 🗂️ **Project Approach**
+1. Update config entity
+2. Update Configuration Manager
+3. Update Components
+4. Create stages pipeline
+5. Create DVC pipeline
