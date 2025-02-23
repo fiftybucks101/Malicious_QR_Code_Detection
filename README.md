@@ -4,7 +4,7 @@
 
 ## 🌟 **Project Overview** 
 
-This project unveils a **Malicious QR Code Detector** designed to evaluate QR code safety.  
+This project unfolds a **Malicious QR Code Detector** designed to evaluate QR code safety.  
 **How it works**: The system extracts the URL embedded in a QR code and employs an **Artificial Neural Network (ANN)** to classify it as:  
 - **Safe**  
 - **Unsafe**  
