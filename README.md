@@ -2,12 +2,12 @@
 
 ---
 
-## 🌟 **Project Overview** 🔲
+## 🌟 **Project Overview** 
 
 🚀 This project unveils a **Malicious QR Code Detector** designed to evaluate QR code safety.  
 **How it works**: The system extracts the URL embedded in a QR code and employs an **Artificial Neural Network (ANN)** to classify it as:  
-- ✅ **Safe**  
-- ❌ **Unsafe**  
+- **Safe**  
+- **Unsafe**  
 
 🛡️ By analyzing URLs, it protects users from threats like **phishing**, **malware**, and other risks linked to malicious QR codes.  
 **Data Collection**: The dataset, sourced from Kaggle, includes **654,132 URLs**—originally split as **70% safe** (~457,892) and **30% malicious** (~196,240). Downsampling balanced it to a **50/50 ratio**, enhancing ANN accuracy and fairness.  
@@ -35,8 +35,9 @@
     ```bash
     python app.py
 
+---
 
-## **DVC Commands
+## **DVC Commands**
 
 1. 🌱 Initialize Git:
     ```bash
@@ -58,12 +59,17 @@
     ```bash
     dvc dag
 
+---
 
-## 📦 **Modular Project Approach**
-🔍 This project adopts a modular structure, breaking down functionality into reusable components—like URL extraction, ANN prediction, and data preprocessing—for cleaner code and easier maintenance.
+## ☁️ **MLOps Implementation**  
+⚙️ he project integrates a robust MLOps workflow using the following tools:  
+- **DVC**: For data and model versioning.  
+- **AWS**: For scalable cloud storage of datasets and artifacts.  
+- **Docker**: For containerizing the application in consistent environments.  
+- **CI/CD**: For automating testing and deployment pipelines.  
+- **MongoDB**: For storing and managing data as the project’s database.
 
-## ☁️ **MLOps Implementation**
-⚙️ The project leverages DVC for data versioning, AWS for scalable cloud storage, Docker for consistent environments, and CI/CD pipelines for automated testing and deployment, ensuring a robust and reproducible workflow.
+---
 
 ## 🗂️ **Project Approach**
 1. Update config entity
