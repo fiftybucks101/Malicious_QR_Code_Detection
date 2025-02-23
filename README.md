@@ -1,7 +1,6 @@
 # Malicious URL Detection In QR Code 
 
-![alt text](image.png) ![alt text](image-1.png)
-
+<video controls src="20250223-0751-04.1401774.mp4" title="Title"></video>
 
 
 ### dvc commands
