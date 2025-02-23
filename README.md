@@ -16,7 +16,7 @@
 ---
 
 ## 🎥 **Project Demo**  
-![Demo](real_gif.gif)  
+![Demo](research/demo.gif)
 *See it in action!*
 
 ---
@@ -36,7 +36,6 @@
     python app.py
 
 ---
-
 ## **DVC Commands**
 
 1. 🌱 Initialize Git:
@@ -62,7 +61,7 @@
 ---
 
 ## ☁️ **MLOps Implementation**  
-⚙️ he project integrates a robust MLOps workflow using the following tools:  
+⚙️ The project integrates a robust MLOps workflow using the following tools:  
 - **DVC**: For data and model versioning.  
 - **AWS**: For scalable cloud storage of datasets and artifacts.  
 - **Docker**: For containerizing the application in consistent environments.  
