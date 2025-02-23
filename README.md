@@ -1,4 +1,4 @@
-# **Malicious URL Detection In QR Code**
+# 📲🔍 **Malicious URL Detection In QR Code**
 
 ## **Project Overview**
 
