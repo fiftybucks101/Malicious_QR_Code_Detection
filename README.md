@@ -17,7 +17,7 @@
 
 ## 🎥 **Project Demo**  
 ![Demo](research/demo.gif)
-*See it in action!*
+
 
 ---
 
